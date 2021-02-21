@@ -9,7 +9,10 @@ const symbols = ['!', '@', '#', '$', '%', '&', '/'];
 /* GET home page. */
 router.get('/', function(req, res, next) {
   password = upperCase.upperCaseFirst(randomWords({ exactly: 3, join: '.' })+'-'+symbols[between(0, symbols.length)]+ between(10,99))
-  res.send({ password: password });
+  res.send({ 
+    password: password ,
+    time: now()
+  });
 });
 
 function between(min, max) {  
