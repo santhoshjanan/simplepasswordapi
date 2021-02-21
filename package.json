@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "nodemon ."
   },
   "keywords": [],
   "author": "",
@@ -12,6 +12,7 @@
   "dependencies": {
     "cookie-parser": "^1.4.5",
     "express": "^4.17.1",
+    "moment": "^2.29.1",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.7",
     "path": "^0.12.7",
