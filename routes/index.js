@@ -13,7 +13,8 @@ router.get('/', function(req, res, next) {
   password = upperCase.upperCaseFirst(randomWords({ exactly: 3, join: '.' })+'-'+symbols[between(0, symbols.length)]+ between(10,99))
   res.send({ 
     password: password ,
-    time: moment().format()
+    time: moment().format(),
+    dummytext: randomWords({1})
   });
 });
 
