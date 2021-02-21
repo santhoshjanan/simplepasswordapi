@@ -18,5 +18,5 @@ var indexRouter = require('./routes/index');
 app.use('/', indexRouter);
 
 app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`)
+    console.log(`Simple Password app listening at http://localhost:${port}`)
 })

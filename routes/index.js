@@ -14,7 +14,6 @@ router.get('/', function(req, res, next) {
   res.send({ 
     password: password ,
     time: moment().format(),
-    dummytext: randomWords({1})
   });
 });
 
