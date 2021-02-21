@@ -2,6 +2,8 @@ var express = require('express');
 var router = express.Router();
 var randomWords = require('random-words'); 
 var upperCase = require('upper-case-first');
+var moment = require('moment');
+
 // import { upperCaseFirst } from "upper-case-first";
 
 const symbols = ['!', '@', '#', '$', '%', '&', '/'];
@@ -11,7 +13,7 @@ router.get('/', function(req, res, next) {
   password = upperCase.upperCaseFirst(randomWords({ exactly: 3, join: '.' })+'-'+symbols[between(0, symbols.length)]+ between(10,99))
   res.send({ 
     password: password ,
-    time: now()
+    time: moment().format()
   });
 });
 
