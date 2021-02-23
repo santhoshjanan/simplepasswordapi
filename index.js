@@ -8,7 +8,8 @@ var cors = require('cors')
 const port = 3000
 
 var corsOptions = {
-    origin: 'http://localhost:8080',
+//    Access-Control-Allow-Origin: '*',
+    origin: ['https://password.santhoshj.com', 'http://localhost', 'http://localhost:3000'],
     optionsSuccessStatus: 200 // For legacy browser support
 }
 
